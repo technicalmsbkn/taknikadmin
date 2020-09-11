@@ -1,0 +1,26 @@
+{
+    "name": "moolchand/taknikadmin",
+    "description": "test package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "technicalmsbkn",
+            "email": "moolchand390@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Moolchand\\Taknikadmin": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Moolchand\\Taknikadmin\\TaknikadminServiceProvider"
+            ]
+        }
+    }
+}
