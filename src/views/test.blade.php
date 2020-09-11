@@ -6,6 +6,6 @@
 	<title>Taknik Admin</title>
 </head>
 <body>
-	<h1>Hello, this is my first package</h1>
+	<h1>Hello, this is my first package </h1>
 </body>
 </html>
