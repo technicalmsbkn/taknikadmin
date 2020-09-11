@@ -13,7 +13,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Moolchand\\Taknikadmin": "src/"
+            "Moolchand\\Taknikadmin\\": "src/"
         }
     },
     "extra": {
