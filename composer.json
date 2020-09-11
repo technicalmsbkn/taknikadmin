@@ -1,6 +1,6 @@
 {
     "name": "moolchand/taknikadmin",
-    "description": "test package",
+    "description": "this package create auth with metronic theme",
     "type": "library",
     "license": "MIT",
     "authors": [
