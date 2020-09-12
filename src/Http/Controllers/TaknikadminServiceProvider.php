@@ -40,6 +40,5 @@ class TaknikadminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/Models/*' => app()->basePath() . 'app/',
         ], 'publish models');
-
     }
 }
