@@ -31,8 +31,5 @@ class TaknikadminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/entrust.php' => app()->basePath() . '/config/entrust.php',
         ]);
-        $this->publishes([
-            __DIR__.'/database/migrations/2020_08_23_135920_entrust_setup_tables.php' => app()->basePath() . '/migrations/2020_08_23_135920_entrust_setup_tables.php',
-        ]);
     }
 }
