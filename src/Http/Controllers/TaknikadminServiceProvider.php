@@ -29,16 +29,16 @@ class TaknikadminServiceProvider extends ServiceProvider
             __DIR__ . '/public/assets' => public_path('assets/'),
         ], 'publish assets');
         $this->publishes([
-            __DIR__ . '/database/seed/UsersTableSeeder.php' => app()->basePath() . 'database/seeds/UsersTableSeeder.php'),
+            __DIR__ . '/database/seed/UsersTableSeeder.php' => database_path('seeds/UsersTableSeeder.php'),
         ], 'publish seed');
         $this->publishes([
-            __DIR__ . '/views/*' => app()->basePath() . 'resources/views/'),
-        ], 'publish views');
+            __DIR__ . '/views/*' => resource_path('resources/views/'),
+        ]);
         $this->publishes([
-            __DIR__ . '/Http/Controllers/*' => app()->basePath() . 'app/Http/Controllers/'),
+            __DIR__ . '/Http/Controllers/*' => app()->basePath() . 'app/Http/Controllers/',
         ], 'publish controllers');
         $this->publishes([
-            __DIR__ . '/Models/*' => app()->basePath() . 'app/'),
+            __DIR__ . '/Models/*' => app()->basePath() . 'app/',
         ], 'publish models');
 
     }
