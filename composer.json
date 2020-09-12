@@ -1,6 +1,6 @@
 {
     "name": "moolchand/taknikadmin",
-    "description": "This package create auth with metronic theme",
+    "description": "This package create auth with metronic theme with user and role crud",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "laravel/ui": "1.0",
-        "gghughunishvili/entrust": "^2.0"
+        "gghughunishvili/entrust": "^2.0",
+         "laravelcollective/html": "^6.1"
     },
     "autoload": {
         "psr-4": {

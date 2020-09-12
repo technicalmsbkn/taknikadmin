@@ -31,8 +31,14 @@ class TaknikadminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/database/seed/UsersTableSeeder.php' => app()->basePath() . 'database/seeds/UsersTableSeeder.php'),
         ], 'publish seed');
-        // $this->publishes([
-        //     __DIR__.'/config/entrust.php' => app()->basePath() . '/config/entrust.php',
-        // ]);
+        $this->publishes([
+            __DIR__ . '/views/*' => app()->basePath() . 'resources/views/'),
+        ], 'publish views');
+        $this->publishes([
+            __DIR__ . '/Http/Controllers/*' => app()->basePath() . 'app/Http/Controllers/'),
+        ], 'publish controllers');
+        $this->publishes([
+            __DIR__ . '/Models/*' => app()->basePath() . 'app/'),
+        ], 'publish models');
     }
 }
