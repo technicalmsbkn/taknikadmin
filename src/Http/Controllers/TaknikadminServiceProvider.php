@@ -29,7 +29,7 @@ class TaknikadminServiceProvider extends ServiceProvider
             __DIR__ . '/public/assets' => public_path('assets/'),
         ], 'publish assets');
         $this->publishes([
-            __DIR__ . '/database/seed/UsersTableSeeder.php' => database_path('seeds/UsersTableSeeder.php'),
+            __DIR__ . '/database/seed/' => database_path('seeds'),
         ], 'publish seed');
         $this->publishes([
             __DIR__ . '/views/*' => resource_path('resources/views/'),
