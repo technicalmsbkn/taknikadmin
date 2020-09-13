@@ -26,7 +26,6 @@
                 List
             </h3>
         </div>
-        @ability('admin','create-user')
         <div class="card-toolbar">
             <a class="btn btn-sm btn-success font-weight-bold" href="users/create">
                 <i class="la la-plus">
@@ -34,7 +33,6 @@
                 Add New
             </a>
         </div>
-        @endability
     </div>
     <div class="card-body">
         <!--begin: Datatable -->
@@ -57,13 +55,8 @@
                         Role
                     </th>
                     <th>
-                        Status
-                    </th>
-                    @ability('admin','edit-user,delete-user')
-                    <th>
                         Actions
                     </th>
-                    @endability
                 </tr>
             </thead>
             <tbody>
@@ -86,41 +79,20 @@
                         	{{$role->name}}
                         @endforeach
                     </td>
-                    <td>
-                        @if($user->status==0)
-                        <a href="{{url('users/status/'.Crypt::encrypt($user->id).'/'.Crypt::encrypt(1))}}">
-                            <span class="text-success font-weight-bold">
-                                Click to active
-                            </span>
-                        </a>
-                        @else
-                        <a href="{{url('users/status/'.Crypt::encrypt($user->id).'/'.Crypt::encrypt(0))}}">
-                            <span class="text-danger font-weight-bold">
-                                Click to deactive
-                            </span>
-                        </a>
-                        @endif
-                    </td>
-                    @ability('admin','edit-user,delete-user')
                     <td nowrap="">
                         <div style="display: flex; justify-content: center;">
-                            @ability('admin','edit-user')
                             <a class="btn btn-sm btn-clean btn-icon btn-icon-md" href="{{url('users/'.Crypt::encrypt($user->id).'/edit')}}" title="Edit">
                                 <i class="la la-edit">
                                 </i>
                             </a>
-                            @endability
-                            @ability('admin','delete-user')
                             {{Form::open([ 'method'  => 'delete', 'route' => [ 'users.destroy', Crypt::encrypt($user->id) ],'onsubmit'=>"delete_confirm()"])}}
                             <button class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete">
                                 <i class="la la-trash">
                                 </i>
                             </button>
                             {{Form::close()}}
-                            @endability
                         </div>
                     </td>
-                    @endability
                 </tr>
                 @endforeach
             </tbody>

@@ -26,7 +26,6 @@
                 List
             </h3>
         </div>
-        @ability('admin','create-role')
         <div class="card-toolbar">
             <a class="btn btn-sm btn-success font-weight-bold" href="roles/create">
                 <i class="la la-plus">
@@ -34,8 +33,6 @@
                 Add New
             </a>
         </div>
-        @endability
-    </div>
     <div class="card-body">
         <!--begin: Datatable -->
         <table class="table table-separate table-head-custom text-capitalize table-checkable text-center" id="kt_datatable1">
@@ -56,11 +53,9 @@
                     <th>
                         Description
                     </th>
-                    @ability('admin','edit-role,delete-role')
                     <th>
                         Actions
                     </th>
-                    @endability
                 </tr>
             </thead>
             <tbody>
@@ -83,26 +78,20 @@
                     <td>
                         {{$role->description}}
                     </td>
-                    @ability('admin','edit-role,delete-role')
                     <td nowrap="">
                         <div style="display: flex; justify-content: center;">
-                            @ability('admin','edit-role')
                             <a class="btn btn-sm btn-clean btn-icon btn-icon-md" href="{{url('roles/'.Crypt::encrypt($role->id).'/edit')}}" title="Edit">
                                 <i class="la la-edit">
                                 </i>
                             </a>
-                            @endability
-                            @ability('admin','delete-role')
                             {{Form::open([ 'method'  => 'delete', 'route' => [ 'roles.destroy', Crypt::encrypt($role->id) ],'onsubmit'=>"delete_confirm()"])}}
                             <button class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete">
                                 <i class="la la-trash">
                                 </i>
                             </button>
                             {{Form::close()}}
-                            @endability
                         </div>
                     </td>
-                    @endability
                 </tr>
                 @endforeach
             </tbody>

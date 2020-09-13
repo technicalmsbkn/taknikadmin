@@ -32,11 +32,11 @@ class TaknikadminServiceProvider extends ServiceProvider
             __DIR__ . '/views/' => resource_path('views/'),
         ], 'publish views');
         $this->publishes([
-            __DIR__.'/config/entrust.php' => app()->basePath() . '/config/entrust.php',
-        ]);
+            __DIR__.'/Http/Controllers/' => app()->basePath() . '/app/Http/Controllers/',
+        ],'publish controllers');
         $this->publishes([
-            __DIR__ . '/database/seed/UsersTableSeeder.php' => base_path('/database/seeds/UsersTableSeeder.php'),
+            __DIR__ . '/database/seed/' => database_path('seed'),
         ], 'publish seed');
-        
+
     }
 }
