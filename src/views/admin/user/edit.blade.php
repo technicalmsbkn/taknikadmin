@@ -56,15 +56,6 @@
               <input class="form-control" id="email" name="email" required type="text" value="{{$user->email}}"/>
             </div>
             <div class="form-group">
-              <label for="mobile">
-                Mobile
-                <span class="text-danger">
-                  *
-                </span>
-              </label>
-              <input class="form-control" id="mobile" name="mobile" required type="mobile" value="{{$user->mobile}}"/>
-            </div>
-            <div class="form-group">
               <label for="password">
                 Password
               </label>

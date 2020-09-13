@@ -57,15 +57,6 @@
                     <input class="form-control" id="email" name="email" required type="text" value="{{old('email')}}"/>
                 </div>
                 <div class="form-group">
-                    <label for="mobile">
-                        Mobile
-                        <span class="text-danger">
-                            *
-                        </span>
-                    </label>
-                    <input class="form-control" id="mobile" name="mobile" required type="mobile" value="{{old('mobile')}}"/>
-                </div>
-                <div class="form-group">
                     <label for="password">
                         Password
                         <span class="text-danger">

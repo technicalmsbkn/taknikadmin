@@ -49,14 +49,12 @@ class UserController extends Controller
     {
         request()->validate([
             'name'     => 'required|max:255',
-            'mobile'   => 'required|digits:10|unique:users',
             'password' => 'required',
             'email'    => 'required|unique:users|email',
             'role_id'  => 'required',
         ]);
         $user   = User::create([
             'name'     => request('name'),
-            'mobile'   => request('mobile'),
             'password' => bcrypt(request('password')),
             'email'    => request('email')
         ]);
@@ -107,13 +105,11 @@ class UserController extends Controller
         $user = User::where('id', Crypt::decrypt($id))->with('role')->first();
         request()->validate([
             'name'    => 'required|max:255',
-            'mobile'  => $user->mobile == request('mobile') ? 'required|digits:10' : 'required|digits:10|unique:users',
             'email'   => $user->email == request('email') ? 'required|email' : 'required|email|unique:users',
             'role_id' => 'required',
         ]);
         $user->update([
             'name'     => request('name'),
-            'mobile'   => request('mobile'),
             'password' => request('password') ? bcrypt(request('password')) : $user->password,
         ]);
         $user->detachRoles($user->role);

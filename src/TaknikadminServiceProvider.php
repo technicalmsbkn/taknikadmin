@@ -35,8 +35,11 @@ class TaknikadminServiceProvider extends ServiceProvider
             __DIR__.'/Http/Controllers/' => app()->basePath() . '/app/Http/Controllers/',
         ],'publish controllers');
         $this->publishes([
-            __DIR__ . '/database/seed/' => database_path('seed'),
+            __DIR__.'/Models/' => app()->basePath() . '/app/',
+        ],'publish models');
+        $this->publishes([
+            __DIR__ . '/database/seed/' => database_path('seeds'),
         ], 'publish seed');
-        
+
     }
 }

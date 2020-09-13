@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'mobile', 'password','email'
+        'name', 'password','email'
     ];
 
     /**
@@ -35,7 +35,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'mobile_verified_at' => 'datetime',
+        'email_verified_at' => 'datetime',
     ];
     public function role()
     {
