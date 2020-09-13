@@ -37,6 +37,6 @@ class TaknikadminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/database/seed/' => database_path('seed'),
         ], 'publish seed');
-
+        
     }
 }
