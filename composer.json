@@ -13,7 +13,7 @@
     "require": {
         "laravel/ui": "1.0",
         "gghughunishvili/entrust": "^2.0",
-         "laravelcollective/html": "^6.1"
+        "laravelcollective/html": "6.2"
     },
     "autoload": {
         "psr-4": {

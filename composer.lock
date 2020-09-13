@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36d39a9253bb491a936a6f6ac832adf1",
+    "content-hash": "2bce346e98fbf12d1ad29e1c8f53e900",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -844,16 +844,16 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "6.x-dev",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "f337e4f6057907a796a0c5256d0fa3e6c3da55f7"
+                "reference": "3bb99be7502feb2129b375cd026ccb0fa4b66628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/f337e4f6057907a796a0c5256d0fa3e6c3da55f7",
-                "reference": "f337e4f6057907a796a0c5256d0fa3e6c3da55f7",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/3bb99be7502feb2129b375cd026ccb0fa4b66628",
+                "reference": "3bb99be7502feb2129b375cd026ccb0fa4b66628",
                 "shasum": ""
             },
             "require": {
@@ -872,7 +872,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.x-dev"
+                    "dev-master": "6.0-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -908,7 +908,7 @@
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "https://laravelcollective.com",
-            "time": "2020-09-07T20:12:41+00:00"
+            "time": "2020-09-07T19:59:40+00:00"
         },
         {
             "name": "nesbot/carbon",
