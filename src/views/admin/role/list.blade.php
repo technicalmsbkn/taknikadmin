@@ -33,6 +33,7 @@
                 Add New
             </a>
         </div>
+    </div>
     <div class="card-body">
         <!--begin: Datatable -->
         <table class="table table-separate table-head-custom text-capitalize table-checkable text-center" id="kt_datatable1">

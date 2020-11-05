@@ -68,9 +68,6 @@
                   </span>
                 </div>
               </div>
-              <p class="pt-2 text-info">
-                If You Want To Change The Password, You Can, Otherwise The Old Password Will Remain
-              </p>
             </div>
             <div class=“form-group”>
               <label>Roles<span class="text-danger">*</span></label>

@@ -40,7 +40,7 @@
                     <div class="d-flex flex-column-fluid flex-column justify-content-between py-9 px-7 py-lg-13 px-lg-35">
                         {{--begin::Logo--}}
                         <a class="text-center pt-2" href="#">
-                            <img alt="" class="max-h-75px" src="logo.png"/>
+                            {{-- <img alt="" class="max-h-75px" src="logo.png"/> --}}
                         </a>
                         {{--end::Logo--}}
                         {{--begin::Aside body--}}
