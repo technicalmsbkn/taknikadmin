@@ -577,11 +577,11 @@
                                            
                                         </span> --}}
                                         <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">
-                                             {{-- Hi, {{Auth::user()->name}} --}}
+                                             Hi, {{Auth::user()->name}}
                                         </span>
                                         <span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
                                             <span class="symbol-label font-size-h5 font-weight-bold">
-                                                A
+                                                {{substr(Auth::user()->name,0,1)}}
                                             </span>
                                         </span>
                                     </div>
@@ -723,7 +723,7 @@
                                         </span>
                                     </span>
                                     <span class="navi-text text-muted text-hover-primary">
-                                        {{-- {{Auth::user()->email}} --}}
+                                        {{Auth::user()->email}}
                                     </span>
                                 </span>
                             </a>
