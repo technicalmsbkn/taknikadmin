@@ -1,6 +1,6 @@
 {
     "name": "moolchand/taknikadmin",
-    "description": "This package create auth with metronic theme with user and role crud",
+    "description": "This Package Will Automatically Integrates The Metronic Admin Theme With Authentication, User And Role Crud.",
     "type": "library",
     "license": "MIT",
     "authors": [
