@@ -49,9 +49,6 @@
                         E-Mail
                     </th>
                     <th>
-                        Mobile
-                    </th>
-                    <th>
                         Role
                     </th>
                     <th>
@@ -70,9 +67,6 @@
                     </td>
                     <td class="text-lowercase">
                         {{$user->email}}
-                    </td>
-                    <td class="text-lowercase">
-                        {{$user->mobile}}
                     </td>
                     <td>
                         @foreach($user->role as $role)

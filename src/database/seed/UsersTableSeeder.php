@@ -16,6 +16,11 @@ class UsersTableSeeder extends Seeder
             'display_name' => 'Admin',
             'description' => 'This is Admin of This is App'
         ]);
+        DB::table('roles')->insert([
+            'name' => "user",
+            'display_name' => 'User',
+            'description' => 'This is User of This is App'
+        ]);
         DB::table('users')->insert([
             'name' => "Admin",
             'email' => 'admin@gmail.com',
